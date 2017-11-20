@@ -18,6 +18,24 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="isystemthread.h" />
+    <ClInclude Include="ithread.h" />
+    <ClInclude Include="ithreadattribute.h" />
+    <ClInclude Include="ithreadfactory.h" />
+    <ClInclude Include="ithreadobject.h" />
+    <ClInclude Include="ithreadobjectimpl.h" />
+    <ClInclude Include="threadattribute.h" />
+    <ClInclude Include="threadobject.h" />
+    <ClInclude Include="winthread.h" />
+    <ClInclude Include="winthreadfactory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="threadattribute.cpp" />
+    <ClCompile Include="threadobject.cpp" />
+    <ClCompile Include="winthread.cpp" />
+    <ClCompile Include="winthreadfactory.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DE143C91-C83D-4653-A705-B6E9F909A1E9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -77,6 +95,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -126,9 +145,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
