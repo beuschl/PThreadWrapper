@@ -25,12 +25,18 @@
     <ClInclude Include="ithreadfactory.h" />
     <ClInclude Include="ithreadobject.h" />
     <ClInclude Include="ithreadobjectimpl.h" />
+    <ClInclude Include="posixthread.h" />
+    <ClInclude Include="posixthreadfactory.h" />
+    <ClInclude Include="psystemthread.h" />
     <ClInclude Include="threadattribute.h" />
     <ClInclude Include="threadobject.h" />
     <ClInclude Include="winthread.h" />
     <ClInclude Include="winthreadfactory.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="posixthread.cpp" />
+    <ClCompile Include="posixthreadfactory.cpp" />
+    <ClCompile Include="psystemthread.cpp" />
     <ClCompile Include="threadattribute.cpp" />
     <ClCompile Include="threadobject.cpp" />
     <ClCompile Include="winthread.cpp" />
